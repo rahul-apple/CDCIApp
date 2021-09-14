@@ -21,3 +21,7 @@ jobs:
       - store_artifacts:
           path: test_output
           destination: scan-output
+workflows:
+  build_and_test:
+    jobs:
+      - build
