@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207BD797A22D3B43EDD899E6 /* Pods_CDCIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DFBF171B9350EA69551EA1 /* Pods_CDCIApp.framework */; };
 		9523B78D26F07F0E00B59395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523B78C26F07F0E00B59395 /* AppDelegate.swift */; };
 		9523B78F26F07F0E00B59395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523B78E26F07F0E00B59395 /* SceneDelegate.swift */; };
 		9523B79126F07F0E00B59395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523B79026F07F0E00B59395 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65DFBF171B9350EA69551EA1 /* Pods_CDCIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDCIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9523B78926F07F0E00B59395 /* CDCIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9523B78C26F07F0E00B59395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9523B78E26F07F0E00B59395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9523B79526F07F0F00B59395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9523B79826F07F0F00B59395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9523B79A26F07F0F00B59395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE21D4440150900B5B50283 /* Pods-CDCIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCIApp.release.xcconfig"; path = "Target Support Files/Pods-CDCIApp/Pods-CDCIApp.release.xcconfig"; sourceTree = "<group>"; };
+		EFC96916181350C3CA265C9C /* Pods-CDCIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCIApp.debug.xcconfig"; path = "Target Support Files/Pods-CDCIApp/Pods-CDCIApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207BD797A22D3B43EDD899E6 /* Pods_CDCIApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F705C61F06C08A0C227B24D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65DFBF171B9350EA69551EA1 /* Pods_CDCIApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60E4D2FC6307E20B53231BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFC96916181350C3CA265C9C /* Pods-CDCIApp.debug.xcconfig */,
+				CBE21D4440150900B5B50283 /* Pods-CDCIApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9523B78026F07F0E00B59395 = {
 			isa = PBXGroup;
 			children = (
 				9523B78B26F07F0E00B59395 /* CDCIApp */,
 				9523B78A26F07F0E00B59395 /* Products */,
+				60E4D2FC6307E20B53231BE0 /* Pods */,
+				3F705C61F06C08A0C227B24D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9523B79D26F07F0F00B59395 /* Build configuration list for PBXNativeTarget "CDCIApp" */;
 			buildPhases = (
+				9D4B0CD6AE4A5C38CCE72E6A /* [CP] Check Pods Manifest.lock */,
 				9523B78526F07F0E00B59395 /* Sources */,
 				9523B78626F07F0E00B59395 /* Frameworks */,
 				9523B78726F07F0E00B59395 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D4B0CD6AE4A5C38CCE72E6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDCIApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9523B78526F07F0E00B59395 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		9523B79E26F07F0F00B59395 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC96916181350C3CA265C9C /* Pods-CDCIApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		9523B79F26F07F0F00B59395 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE21D4440150900B5B50283 /* Pods-CDCIApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
